@@ -8,9 +8,10 @@ git clone https://aur.archlinux.org/yay.git /tmp/yay &&
 cd /tmp/yay &&
 makepkg -si --noconfirm &&
 cd - &&
-yay -S --noconfirm waybar rofi hyprpaper kitty fastfetch && 
+yay -S --noconfirm waybar rofi hyprpaper kitty fastfetch swaync network-manager-applet networkmanager pacman-contrib jq wl-clipboard &&
 curl -O https://raw.githubusercontent.com/NormallyDisblend/Hyprland-dotfiles/main/autorun.py &&
 python3 autorun.py
+
 ```
 
 ## Usage
