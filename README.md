@@ -32,6 +32,8 @@ python3 autorun.py
 ## Preview
 <img width="1367" height="38" alt="image" src="https://github.com/user-attachments/assets/40360b34-fc1f-48c8-b6c7-bb49cb1e1ab8" />
 <img width="524" height="298" alt="image" src="https://github.com/user-attachments/assets/5e64ab4d-0e58-4ea8-b082-4a8d5bf7952e" />
+<img width="747" height="399" alt="image" src="https://github.com/user-attachments/assets/b1383f3d-e083-4f61-913f-e6f84c51c55e" />
+
 
 ## Keybinds
 
