@@ -2,17 +2,17 @@
     font: "Fira Sans 12";
     g-spacing: 6px;
     g-margin: 0;
-    b-color: #2E344099; /* Nord: Polar Night, semi-transparent */
+    b-color: #2E3440FF; /* Nord: Polar Night, darker blue */
     fg-color: #D8DEE9FF; /* Nord: Snow Storm, text */
-    fgp-color: #5E81ACFF; /* Darker cyan-ish (Nord: Frost, adjusted), placeholder */
-    b-radius: 8px; /* Rounded corners */
+    fgp-color: #5E81ACFF; /* Nord: Frost, lighter blue, placeholder */
+    b-radius: 4px; /* Slightly more rounded corners */
     g-padding: 4px;
-    hl-color: #4C566AFF; /* Nord: Polar Night, darker for selected background */
+    hl-color: #5E81ACFF; /* Nord: Frost, lighter blue for selected background */
     hlt-color: #ECEFF4FF; /* Nord: Snow Storm, selected text */
-    alt-color: #3B4252FF; /* Nord: Polar Night, solid darker alternate rows */
-    wbg-color: #2E344033; /* Nord: Polar Night, very transparent window */
-    w-border: 1px solid;
-    w-border-color: #5E81ACFF; /* Darker cyan-ish (Nord: Frost, adjusted), border */
+    alt-color: #2E3440FF; /* Nord: Polar Night, darker blue for alternate rows */
+    wbg-color: #2E3440FF; /* Nord: Polar Night, darker blue for window */
+    w-border: 0px solid;
+    w-border-color: #5E81ACFF; /* Nord: Frost, lighter blue (unused) */
     w-padding: 8px;
 }
 
@@ -43,18 +43,20 @@ window {
 }
 
 prompt {
-    text-color: @w-border-color; /* Matches icon color to border (darker cyan-ish) */
+    text-color: @w-border-color; /* Matches icon color to lighter blue */
+    content: ""; /* Search icon (Unicode magnifying glass) */
 }
 
 inputbar {
     children: ["prompt", "entry"];
     spacing: @g-spacing;
+    background-color: @hl-color; /* Nord: Frost, lighter blue for searchbar */
 }
 
 entry {
     placeholder: "Search Apps";
     text-color: @fg-color; /* Snow Storm */
-    placeholder-color: @fgp-color; /* Darker cyan-ish */
+    placeholder-color: @fgp-color; /* Nord: Frost, lighter blue */
 }
 
 mainbox {
@@ -71,27 +73,27 @@ element {
     border: 0px solid;
     border-radius: @b-radius;
     border-color: @b-color;
-    background-color: #2E3440FF; /* Nord: Polar Night, solid darker background */
+    background-color: @b-color; /* Nord: Polar Night, darker blue */
     text-color: @fg-color; /* Snow Storm */
 }
 
 element normal.normal {
-    background-color: #2E3440FF; /* Nord: Polar Night, solid darker background */
+    background-color: @b-color; /* Nord: Polar Night, darker blue */
     text-color: @fg-color; /* Snow Storm */
 }
 
 element alternate.normal {
-    background-color: @alt-color; /* Polar Night, solid darker alternate rows */
+    background-color: @alt-color; /* Nord: Polar Night, darker blue */
     text-color: @fg-color; /* Snow Storm */
 }
 
 element selected.active {
-    background-color: @hl-color; /* Polar Night, darker selection */
+    background-color: @hl-color; /* Nord: Frost, lighter blue for selection */
     text-color: @hlt-color; /* Snow Storm */
 }
 
 element selected.normal {
-    background-color: @hl-color; /* Polar Night, darker selection */
+    background-color: @hl-color; /* Nord: Frost, lighter blue for selection */
     text-color: @hlt-color; /* Snow Storm */
 }
 
