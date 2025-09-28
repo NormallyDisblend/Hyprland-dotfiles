@@ -20,6 +20,9 @@ python3 autorun.py
 - Select "Continue" and press Enter to start downloading and setting up your chosen configs.  
 - Press 'q' to exit without changes.
 
+<img width="1367" height="769" alt="image" src="https://github.com/user-attachments/assets/f7a8c375-bca7-4b31-a56b-5a020fb2a451" />
+
+
 ## Requirements
 
 - Arch Linux or derivative with `pacman` and `yay` available.  
