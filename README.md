@@ -28,3 +28,17 @@ python3 autorun.py
 - Arch Linux or derivative with `pacman` and `yay` available.  
 - Python 3 installed (installed automatically via the command above).  
 - Git installed (installed automatically via the command above).
+
+## Preview
+<img width="1367" height="38" alt="image" src="https://github.com/user-attachments/assets/40360b34-fc1f-48c8-b6c7-bb49cb1e1ab8" />
+<img width="524" height="298" alt="image" src="https://github.com/user-attachments/assets/5e64ab4d-0e58-4ea8-b082-4a8d5bf7952e" />
+
+## Keybinds
+
+Super + Q = Open terminal
+Super + C = Close terminal
+Super + Space = Open rofi
+Super + G = Hyprlock
+Super + A = Screenshot
+
+Others are the deafult hyprland configs.
