@@ -32,6 +32,9 @@ def print_menu():
             print(f"{cursor} {checked} {opt}")
 
 def read_key():
+    if not sys.stdin.isatty():
+        print("Error: Not running in a terminal. Please run this script in a terminal.")
+        sys.exit(1)
     fd = sys.stdin.fileno()
     old_settings = termios.tcgetattr(fd)
     try:
@@ -45,6 +48,7 @@ def read_key():
         return ch
     finally:
         termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+
 
 def download_and_copy(option):
     repo_url = "https://github.com/NormallyDisblend/Hyprland-dotfiles.git"
